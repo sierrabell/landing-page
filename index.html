@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <header id="header"> Sol&Co
-    <img id="header-img" src="https://www.cityofyoakum.org/images/j0439072.png" width="100px" height="20px">
-    <link rel="stylesheet" href="index.css">
-    <nav id="nav-bar">
-    <ul class="nav-link">
-      <li>
-        <a class="nav-link" href="#clothing"> Clothes </a>
-      </li>
-      <br>
-      <li>
-        <a class="nav-link" href="#aboutus"> About Us </a>
-      </li>
-      <br>
-      <li>
-        <a class="nav-link" href="#stories"> Stories </a>
-      </li>
-    </ul>
-    <br>
-    <br>
-    <br>
-    </nav>
-  </header>
-  <body>
+<head>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header id="header">
+  <nav id="nav-bar">
+    <div class="logo">
+      <picture>
+        <img id="header-img"src="https://www.cityofyoakum.org/images/j0439072.png" width="300px" height="40px">
+      </picture>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>
+          <a class="nav-link"  href="#clothing">Clothes</a>
+        </li>
+        <li>
+          <a class="nav-link"  href="#aboutus">About Us</a>
+        </li>
+        <li>
+          <a class="nav-link"  href="#stories">Stories</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="main-content">
     <div id=clothing-section>
       <h3 id="clothing">
     Clothes
@@ -104,7 +112,30 @@ Pellentesque convallis tempor odio, at iaculis nulla pharetra ut. Pellentesque s
     </p>
     <img id="clothing-img" src="https://i0.wp.com/www.flowersandcompany.net/wp-content/uploads/2014/06/insert-picture-here.jpg">
   </div>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-    </script>
+  <form id="form"  action="https://www.freecodecamp.com/email-submit">
+    <label id="email-label" for="email"> Enter your email to be the first to know about launches, news and promotions!
+      <input id="email" type="email" name="email" button type="submit" pattern:"[^@]*@[^@]*" required placeholder="enter your email"> </input>
+    </label>
+    <label id="submit-label" for="submit">
+      <input id="submit"  type="submit" > </input>
+    </label>
+  </form>
+  <video id="video" controls autoplay>
+    <source src="http://www.example.com/waterfall-video.mp4" type="video.mp4">
+  </video>
+</div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
+  <style>
+  @media screen and (max-width: 1000px) {
+    body {
+      background-color: red;
+    }
+  }
+  .flex-column{
+    display: flex;
+    flex-direction: column;
+  }
+  </style>
   </body>
 </html>
